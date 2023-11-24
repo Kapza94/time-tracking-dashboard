@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+  color: whitesmoke;
+}
+
+.center {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.avatar {
+  width: 70px;
+}
+
+.padding-l-r {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.work-play-study {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.exercise-social-selfCare {
+  width: 100%;
+}
+
+/* .element-wrappers {
+  width: ;
+} */
+
+.user-report-wrapper {
+  width: 20%;
+  margin-right: 2rem;
+  background-color: hsl(235, 46%, 20%);
+  padding: 2rem;
+}
+
+.subtext {
+  font-size: 13px;
+}
+
+.main-time {
+  font-size: 2em;
+  padding: 1.3rem 0 0.4rem 0;
+}
+
+/* .element {
+  padding: 3rem !important;
+  height: 200px;
+  background-color: hsl(235, 46%, 20%);
+} */
+
+.inner-element {
+  background-color: hsl(235, 46%, 20%);
+  padding: 0rem;
+  height: 200px;
+}
+
+.outer-element {
+  background-color: aliceblue;
+  padding: 0rem;
+  height: 200px;
+}
+
+.time-tracking-container {
+  height: 400px;
+}

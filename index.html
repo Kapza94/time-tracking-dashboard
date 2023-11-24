@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Frontend Mentor | Time tracking dashboard</title>
@@ -21,93 +21,136 @@
     </style>
   </head>
   <body>
-    <div class="main-container">
-      <div id="user-report" class="user-report-wrapper">
-        Report for Jeremy Robson Daily Weekly Monthly
-      </div>
-      <div id="work" class="work-wrapper">
-        Work 5hrs
-        <!-- daily -->
-        Previous - 7hrs
-        <!-- daily -->
-        32hrs
-        <!-- weekly -->
-        Previous - 36hrs
-        <!-- weekly -->
-        103hrs
-        <!-- monthly -->
-        Previous - 128hrs
-        <!-- monthly -->
-      </div>
-      <div id="play" class="play-wrapper">
-        Play 1hr
-        <!-- daily -->
-        Previous - 2hrs
-        <!-- daily -->
-        10hrs
-        <!-- weekly -->
-        Previous - 8hrs
-        <!-- weekly -->
-        23hrs
-        <!-- monthly -->
-        Previous - 29hrs
-        <!-- monthly -->
-      </div>
-      <div id="study" class="study-wrapper">
-        Study 0hrs
-        <!-- daily -->
-        Previous - 1hr
-        <!-- daily -->
-        4hrs
-        <!-- weekly -->
-        Previous - 7hrs
-        <!-- weekly -->
-        13hrs
-        <!-- monthly -->
-        Previous - 19hrs
-        <!-- monthly -->
-      </div>
-      <div id="exercise" class="exercise-wrapper">
-        Exercise 1hr
-        <!-- daily -->
-        Previous - 1hr
-        <!-- daily -->
-        4hrs
-        <!-- weekly -->
-        Previous - 5hrs
-        <!-- weekly -->
-        11hrs
-        <!-- monthly -->
-        Previous - 18hrs
-        <!-- monthly -->
-      </div>
-      <div id="social" class="social-wrapper">
-        Social 1hr
-        <!-- daily -->
-        Previous - 3hrs
-        <!-- daily -->
-        5hrs
-        <!-- weekly -->
-        Previous - 10hrs
-        <!-- weekly -->
-        21hrs
-        <!-- monthly -->
-        Previous - 23hrs
-        <!-- monthly -->
-      </div>
-      <div id="self-care" class="self-care-wrapper">
-        Self Care 0hrs
-        <!-- daily -->
-        Previous - 1hr
-        <!-- daily -->
-        2hrs
-        <!-- weekly -->
-        Previous - 2hrs
-        <!-- weekly -->
-        7hrs
-        <!-- monthly -->
-        Previous - 11hrs
-        <!-- monthly -->
+    <div class="main-container center d-flex">
+      <div class="content-wrapper d-flex">
+        <div id="user-report" class="user-report-wrapper">
+          <img src="./images/image-jeremy.png" alt="image of jeremy" class="avatar" />
+          <h2>Report for <span class="user-name">Jeremy Robson</span></h2>
+
+          <p>Daily</p>
+          <p>Weekly</p>
+          <p>Monthly</p>
+        </div>
+        <div class="time-tracking-container">
+          <div class="work-play-study d-flex">
+            <div id="work " class="work-wrapper element">
+              <div class="outer-element">
+                <div class="inner-element">
+                  <h3>Work</h3>
+                  <p class="main-time">5hrs</p>
+                  <!-- daily average-->
+                  <p class="show subtext">Last Week - 7hrs</p>
+                  <!-- daily average  last week-->
+                  <p class="hide main-time">32hrs</p>
+                  <!-- weekly average-->
+                  <p class="hide subtext">- 36hrs</p>
+                  <!-- weekly last week average-->
+                  <p class="hide main-time">103hrs</p>
+                  <!-- monthly  average-->
+                  <p class="hide subtext">Last week - 128hrs</p>
+                  <!-- monthly average last month-->
+                </div>
+              </div>
+            </div>
+            <div id="play" class="play-wrapper padding-l-r element">
+              <div class="outer-element">
+                <div class="inner-element">
+                  <h3>Play</h3>
+                  <p class="main-time">1hr</p>
+                  <!-- daily average-->
+                  <p class="show subtext">Last week - 2hrs</p>
+                  <!-- daily average  last week-->
+                  <p class="hide main-time">10hrs</p>
+                  <!-- weekly average-->
+                  <p class="hide subtext">Last week - 8hrs</p>
+                  <!-- weekly last week average-->
+                  <p class="hide main-time">23hrs</p>
+                  <!-- monthly  average-->
+                  <p class="hide subtext">Last week - 29hrs</p>
+                  <!-- monthly average last month-->
+                </div>
+              </div>
+            </div>
+            <div id="study" class="study-wrapper element">
+              <div class="outer-element">
+                <div class="inner-element">
+                  <h3>Study</h3>
+                  <p class="main-time">0hrs</p>
+                  <!-- daily average-->
+                  <p class="show subtext">Last week - 1hr</p>
+                  <!-- daily average  last week-->
+                  <p class="hide main-time">4hrs</p>
+                  <!-- weekly average-->
+                  <p class="hide subtext">Last week - 7hrs</p>
+                  <!-- weekly last week average-->
+                  <p class="hide main-time">13hrs</p>
+                  <!-- monthly  average-->
+                  <p class="hide subtext">Last week - 19hrs</p>
+                  <!-- monthly average last month-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="exercise-social-selfCare d-flex">
+            <div id="exercise " class="exercise-wrapper element">
+              <div class="outer-element">
+                <div class="inner-element">
+                  <h3>Exercise</h3>
+                  <p class="main-time">1hr</p>
+                  <!-- daily average-->
+                  <p class="show subtext">Last week - 1hr</p>
+                  <!-- daily average  last week-->
+                  <p class="hide main-time">4hrs</p>
+                  <!-- weekly average-->
+                  <p class="hide subtext">Last week - 5hrs</p>
+                  <!-- weekly last week average-->
+                  <p class="hide main-time">11hrs</p>
+                  <!-- monthly  average-->
+                  <p class="hide subtext">Last week - 18hrs</p>
+                  <!-- monthly average last month-->
+                </div>
+              </div>
+            </div>
+            <div id="social " class="social-wrapper padding-l-r element">
+              <div class="outer-element">
+                <div class="inner-element">
+                  <h3>Social</h3>
+                  <p class="main-time">1hr</p>
+                  <!-- daily average-->
+                  <p class="show subtext">Last week - 3hrs</p>
+                  <!-- daily average  last week-->
+                  <p class="hide main-time">5hrs</p>
+                  <!-- weekly average-->
+                  <p class="hide subtext">Last week - 10hrs</p>
+                  <!-- weekly last week average-->
+                  <p class="hide main-time">21hrs</p>
+                  <!-- monthly  average-->
+                  <p class="hide subtext">Last week - 23hrs</p>
+                  <!-- monthly average last month-->
+                </div>
+              </div>
+            </div>
+            <div id="self-care" class="self-care-wrapper element">
+              <div class="outer-element">
+                <div class="inner-element">
+                  <h3>Self Care</h3>
+                  <p class="main-time">0hrs</p>
+                  <!-- daily average-->
+                  <p class="show subtext">Last week - 1hr</p>
+                  <!-- daily average  last week-->
+                  <p class="hide main-time">2hrs</p>
+                  <!-- weekly average-->
+                  <p class="hide subtext">Last week - 2hrs</p>
+                  <!-- weekly last week average-->
+                  <p class="hide main-time">7hrs</p>
+                  <!-- monthly  average-->
+                  <p class="hide subtext">Last week - 11hrs</p>
+                  <!-- monthly average last month-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -116,5 +159,6 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
